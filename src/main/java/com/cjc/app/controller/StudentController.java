@@ -10,45 +10,6 @@ import com.cjc.app.model.Student;
 @Controller
 public class StudentController {
 
-      private String hello;
-	
-	   String s = "ABC";
-
-        public void m1()
-        {
-          System.out.println("this is m1 Method");
-        }
-
-         int a = 10;
-
-	String s = "ABC";
-
-	int a = 10;
-
-
-	public boolean findEvenoddNumber(int num) {
-		return (num % 2 == 0) ? true : false;
-	}
-
-	// Task : WAP to find out Prime Number In java?
-
-	public boolean findPrimeNumber(int num) {
-		int count = 0;
-		for (int i = 1; i <= num; i++) {
-			if (num % i == 0) {
-				count++;
-			}
-			if (count == 0) {
-				return true;
-			}
-		}
-		return false;
-	}
-
-	public String findNumber(int num) {
-		return (num > 0) ? "Positive Number" : "Negative Number";
-	}
-
 	@RequestMapping(value = "/")
 	public String landingPage() {
 		System.out.println("Inside Landing page..!");
