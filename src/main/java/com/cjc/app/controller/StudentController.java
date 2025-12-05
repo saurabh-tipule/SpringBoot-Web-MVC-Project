@@ -10,9 +10,18 @@ import com.cjc.app.model.Student;
 @Controller
 public class StudentController {
 
+
+        public void m1()
+        {
+          System.out.println("this is m1 Method");
+        }
+
+         int a = 10;
+
 	String s = "ABC";
 
 	int a = 10;
+
 
 	public boolean findEvenoddNumber(int num) {
 		return (num % 2 == 0) ? true : false;
