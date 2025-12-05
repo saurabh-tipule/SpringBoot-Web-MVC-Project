@@ -29,6 +29,12 @@ public class StudentController {
 		return false;
 	}
 
+        public String findNumber(int num)
+        {
+          return (num>0)?"Positive Number":"Negative Number";
+        }
+
+
 	@RequestMapping(value = "/")
 	public String landingPage() {
 		System.out.println("Inside Landing page..!");
