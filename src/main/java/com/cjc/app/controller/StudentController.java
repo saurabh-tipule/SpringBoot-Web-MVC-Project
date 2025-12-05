@@ -10,6 +10,7 @@ import com.cjc.app.model.Student;
 @Controller
 public class StudentController {
 
+	   String s = "ABC";
 
         public void m1()
         {
