@@ -10,6 +10,25 @@ import com.cjc.app.model.Student;
 @Controller
 public class StudentController {
 
+	public boolean findEvenoddNumber(int num) {
+		return (num % 2 == 0) ? true : false;
+	}
+
+	// Task : WAP to find out Prime Number In java?
+
+	public boolean findPrimeNumber(int num) {
+		int count = 0;
+		for (int i = 1; i <= num; i++) {
+			if (num % i == 0) {
+				count++;
+			}
+			if (count == 0) {
+				return true;
+			}
+		}
+		return false;
+	}
+
 	@RequestMapping(value = "/")
 	public String landingPage() {
 		System.out.println("Inside Landing page..!");
