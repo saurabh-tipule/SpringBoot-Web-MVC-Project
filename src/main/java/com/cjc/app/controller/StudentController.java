@@ -10,6 +10,8 @@ import com.cjc.app.model.Student;
 @Controller
 public class StudentController {
 
+         int a = 10;
+
 	public boolean findEvenoddNumber(int num) {
 		return (num % 2 == 0) ? true : false;
 	}
